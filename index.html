@@ -1,1 +1,35 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futureable Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="background-video">
+            <video autoplay loop muted id="backgroundVideo">
+                <source src="assets/videos/background.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <div class="music-box">
+            <img id="albumArt" src="assets/images/default.jpg" alt="Album Art" class="album-art">
+            <div class="music-logo">
+                <img src="assets/images/music-logo.png" alt="Music Logo">
+            </div>
+            <div class="controls">
+                <button id="prevBtn">Prev</button>
+                <button id="playBtn">Play</button>
+                <button id="nextBtn">Next</button>
+            </div>
+            <div class="volume-control">
+                <input type="range" id="volumeSlider" min="0" max="100" value="50">
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+  </html>
